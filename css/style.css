@@ -1,0 +1,84 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/************ Fonte **************************/
+
+.tai-heritage-pro-bold {
+  font-family: "Tai Heritage Pro", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/**************** Variable ********************/
+html {
+  --grøn: rgba(7 84 56);
+  --beige: rgb(223 220 213);
+  --font_tai: "Tai Heritage Pro", serif;
+}
+
+/**************** Overordnet style ************/
+
+body {
+  background-color: var(--beige);
+}
+main {
+  padding: 1.2rem;
+}
+
+h1 {
+  color: var(--grøn);
+  font-family: "Tai Heritage Pro", serif;
+  font-size: 14vw;
+  line-height: 1;
+}
+
+h2 {
+  color: var(--grøn);
+  font-family: "Tai Heritage Pro", serif;
+}
+
+h3 {
+  color: var(--grøn);
+  font-family: "Tai Heritage Pro", serif;
+}
+
+/************* Knapper ********************/
+
+.knap {
+  background-color: var(--grøn);
+  color: var(--beige);
+  width: 40%;
+  padding: 0.2rem;
+  text-align: center;
+  font-family: var(--font_tai);
+  font-size: 3vw;
+  margin: 2rem auto;
+}
+
+/************ Forside ********************/
+
+.forside_img {
+  width: 80%;
+  margin-bottom: 3rem;
+}
+
+.forside_h2 {
+  writing-mode: vertical-lr;
+  font-size: 9vw;
+}
+
+.forside_h3 {
+  font-size: 6vw;
+  line-height: 1;
+  margin-left: 7rem;
+}
