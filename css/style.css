@@ -155,8 +155,7 @@ main {
 h1 {
   color: var(--grøn);
   font-family: "Tai Heritage Pro", serif;
-  font-size: 14vw;
-  line-height: 1;
+  font-size: 9vw;
 }
 
 h2 {
@@ -172,6 +171,7 @@ h3 {
 /************* Knapper ********************/
 
 .knap {
+  display: inline-block;
   background-color: var(--grøn);
   color: var(--beige);
   width: 40%;
@@ -181,26 +181,67 @@ h3 {
   font-size: 3.6vw;
   margin: 2rem auto;
   text-decoration: none;
+  border-radius: 2%;
 }
 
 .knap:hover {
   text-decoration: underline;
+  transform: scale(1.1);
 }
 
 /************ Forside ********************/
 
 .forside_img {
-  width: 75%;
+  width: 78%;
   margin-bottom: 3rem;
+}
+
+.forside_h1 {
+  font-size: 14vw;
+  line-height: 1;
 }
 
 .forside_h2 {
   writing-mode: vertical-lr;
-  font-size: 8vw;
+  font-size: 9vw;
+  line-height: 1.5;
 }
 
 .forside_h3 {
   font-size: 5vw;
   line-height: 1;
   margin-left: 40%;
+}
+
+/*********** Projekter ********************/
+
+.projekt {
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.projekt img {
+  width: 55%;
+  max-width: 350px;
+  margin: 2rem auto;
+}
+
+.projekt p {
+  margin-bottom: 0.5rem;
+  font-family: "Work Sans", sans-serif;
+  color: var(--grøn);
+  font-size: 1.5rem;
+}
+
+.projekt h2 {
+  font-size: 2rem;
+}
+
+.projekt .knap {
+  font-size: 1.2rem;
+  padding: 0.1rem 2rem;
+}
+
+.projekt_h1 {
+  text-align: center;
 }
