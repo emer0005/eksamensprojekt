@@ -27,7 +27,7 @@ img {
 
 /**************** Variable ********************/
 html {
-  --grøn: rgba(7 84 56);
+  --grøn: #014421;
   --beige: rgb(223 220 213);
   --font_tai: "Tai Heritage Pro", serif;
 }
@@ -168,6 +168,32 @@ h3 {
   font-family: "Tai Heritage Pro", serif;
 }
 
+p {
+  font-family: "Work Sans", sans-serif;
+  line-height: 2;
+}
+
+li {
+  font-family: "Work Sans", sans-serif;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+ul {
+  margin-bottom: 3rem;
+}
+
+span {
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+
+/************* Generelle klasser *************/
+
+.center {
+  text-align: center;
+}
+
 /************* Knapper ********************/
 
 .knap {
@@ -210,7 +236,7 @@ h3 {
 .forside_h3 {
   font-size: 5vw;
   line-height: 1;
-  margin-left: 40%;
+  margin-left: 35%;
 }
 
 /*********** Projekter ********************/
@@ -242,6 +268,13 @@ h3 {
   padding: 0.1rem 2rem;
 }
 
-.projekt_h1 {
-  text-align: center;
+/**************** Om mig ****************/
+
+li p {
+  line-height: 1.5;
+}
+
+.ommig_img {
+  max-width: 600px;
+  margin: 0 auto;
 }
