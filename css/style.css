@@ -63,21 +63,23 @@ h3 {
 p {
   font-family: "Work Sans", sans-serif;
   line-height: 2;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
 li {
   font-family: "Work Sans", sans-serif;
+  font-size: 1.2rem;
   list-style: none;
   margin-bottom: 1rem;
 }
 
 ul {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 span {
+  margin-top: 0rem;
   font-weight: 200;
   font-size: 0.8rem;
 }
@@ -205,6 +207,10 @@ nav {
   text-align: center;
 }
 
+.order {
+  order: 3;
+}
+
 /************* Knapper ********************/
 
 .knap {
@@ -293,7 +299,7 @@ li p {
 .ommig_img {
   max-width: 600px;
   margin: 0 auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 /************ Projekt 1-4 ***************/

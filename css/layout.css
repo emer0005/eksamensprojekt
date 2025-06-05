@@ -5,14 +5,41 @@
 }
 
 @media (min-width: 1000px) {
-  .baggrund {
-    aspect-ratio: 16/9;
-    background: var(--beige) url("../billeder/mønster.svg") no-repeat 100px;
-    background-size: cover;
-    position: relative;
+  /**************** Generel style **********************/
+  li {
+    font-size: 1.7vw;
+    margin-bottom: 2rem;
+  }
+  li p {
+    font-size: 1.7vw;
+  }
+
+  h2 {
+    font-size: 2.1vw;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  p {
+    font-size: 1.7vw;
+  }
+
+  span {
+    font-size: 1vw;
   }
 
   /************** Overordnet klasser ******************/
+
+  body {
+    position: relative;
+  }
+
+  main {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
 
   .flex_desktop {
     display: flex;
@@ -41,7 +68,7 @@
   .forside_img {
     width: 30%;
     position: absolute;
-    top: 15%;
+    top: 30%;
     left: 57%;
   }
   .forside_h2 {
@@ -49,7 +76,7 @@
     white-space: nowrap;
     font-size: 2.6vw;
     left: 87%;
-    top: 50%;
+    top: 100%;
   }
 
   .overskrift {
@@ -77,5 +104,27 @@
 
   .projekt:nth-child(4n) {
     border-right: none;
+  }
+
+  /************* Om mig *************/
+  .ommig_img {
+    position: absolute;
+    width: 33%;
+    left: 55%;
+    top: 20%;
+  }
+
+  .ommig_h1 {
+    text-align: left;
+    margin-left: 15%;
+    margin-bottom: 2rem;
+    font-size: 4vw;
+  }
+
+  .læring {
+    position: absolute;
+    max-width: 1200px;
+    top: 130%;
+    left: 35%;
   }
 }
