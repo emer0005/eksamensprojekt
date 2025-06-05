@@ -63,13 +63,13 @@ h3 {
 p {
   font-family: "Work Sans", sans-serif;
   line-height: 2;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 2rem;
 }
 
 li {
   font-family: "Work Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   list-style: none;
   margin-bottom: 1rem;
 }
@@ -256,7 +256,7 @@ nav {
 .forside_h3 {
   font-size: 1.5rem;
   line-height: 1;
-  margin-left: 35%;
+  margin-left: 31%;
 }
 
 /*********** Projekter ********************/
@@ -292,6 +292,7 @@ nav {
 /**************** Om mig ****************/
 
 li p {
+  font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 0;
 }
@@ -300,6 +301,10 @@ li p {
   max-width: 600px;
   margin: 0 auto;
   margin-bottom: 2rem;
+}
+
+.uddannelse {
+  margin-top: 0.55rem;
 }
 
 /************ Projekt 1-4 ***************/
