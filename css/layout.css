@@ -7,11 +7,11 @@
 @media (min-width: 1000px) {
   /**************** Generel style **********************/
   li {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     margin-bottom: 2rem;
   }
   li p {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
   }
 
   h2 {
@@ -23,7 +23,7 @@
   }
 
   p {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
   }
 
   span {
@@ -94,7 +94,7 @@
   }
 
   .projekt p {
-    font-size: 1.2rem;
+    font-size: 1.4vw;
     min-width: 30px;
   }
   .projekt {
