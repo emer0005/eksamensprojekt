@@ -45,14 +45,14 @@ h1 {
   color: var(--grøn);
   font-family: "Tai Heritage Pro", serif;
   font-size: 3rem;
-  line-height: 0.2;
-  margin-top: 2rem;
+  line-height: 1;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
   color: var(--grøn);
   font-family: "Tai Heritage Pro", serif;
-  margin-top: 2rem;
 }
 
 h3 {
@@ -64,16 +64,17 @@ p {
   font-family: "Work Sans", sans-serif;
   line-height: 2;
   font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
 li {
   font-family: "Work Sans", sans-serif;
   list-style: none;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 ul {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 span {
@@ -83,7 +84,7 @@ span {
 
 img {
   width: 80%;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 /************** Menu *************************/
@@ -210,14 +211,14 @@ nav {
   display: inline-block;
   background-color: var(--grøn);
   color: var(--beige);
-  width: 40%;
-  padding: 0.2rem;
+  width: 200px;
   text-align: center;
   font-family: var(--font_tai);
-  font-size: 3.6vw;
-  margin: 2rem auto;
+  margin: 1rem auto;
   text-decoration: none;
-  border-radius: 2%;
+  border-radius: 4%;
+  font-size: 1.2rem;
+  padding: 0.1rem 2rem;
 }
 
 .knap:hover {
@@ -236,6 +237,7 @@ nav {
 .forside_h1 {
   font-size: 14vw;
   line-height: 1;
+  margin-bottom: 0;
 }
 
 .forside_h2 {
@@ -266,6 +268,7 @@ nav {
 
 .projekt p {
   margin-bottom: 0.5rem;
+  margin-top: 0;
   font-family: "Work Sans", sans-serif;
   color: var(--grøn);
   font-size: 1.5rem;
@@ -273,22 +276,24 @@ nav {
 
 .projekt h2 {
   font-size: 2rem;
+  line-height: 1;
 }
 
-.projekt .knap {
-  font-size: 1.2rem;
-  padding: 0.1rem 2rem;
+.projekter_h1 {
+  margin-bottom: 4rem;
 }
 
 /**************** Om mig ****************/
 
 li p {
   line-height: 1.5;
+  margin-bottom: 0;
 }
 
 .ommig_img {
   max-width: 600px;
   margin: 0 auto;
+  margin-bottom: 1.5rem;
 }
 
 /************ Projekt 1-4 ***************/
