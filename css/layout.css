@@ -1,9 +1,55 @@
 .flex {
   display: flex;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 @media (min-width: 1000px) {
-  p {
-    font-size: 1.5rem;
+  body {
+    background: var(--beige) url("../billeder/mønster.svg") no-repeat fixed center 26px;
+    position: relative;
+  }
+
+  /************** Overordnet klasser ******************/
+
+  .flex_desktop {
+    display: flex;
+    gap: 150px;
+  }
+
+  .order-1 {
+    order: -1;
+  }
+
+  /******************* forside ************************/
+
+  .forside_h1 {
+    font-size: 6vw;
+  }
+
+  .forside_h3 {
+    font-size: 3vw;
+  }
+
+  .forside_img {
+    width: 30%;
+    position: absolute;
+    top: 33%;
+    left: 57%;
+  }
+  .forside_h2 {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 2.6vw;
+    left: 87%;
+    top: 108%;
+  }
+
+  .overskrift {
+    margin-top: 8%;
+  }
+
+  .flex {
+    max-width: none;
   }
 }

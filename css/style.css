@@ -38,7 +38,7 @@ body {
   background-color: var(--beige);
 }
 main {
-  padding: 1.4rem;
+  padding: 0 1.4rem;
 }
 
 h1 {
@@ -93,16 +93,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
   padding-right: 40px;
-  background-color: var(--beige);
   margin-bottom: 0;
 }
 
 .logo img {
-  width: 60px;
-  height: 60px;
-  margin: 0;
+  width: clamp(60px, 8vw, 100px);
+  height: auto;
+  margin: 1rem;
 }
 
 nav {
@@ -127,12 +125,13 @@ nav {
 
 .menu a {
   display: block;
-  padding: 10px;
+  padding-left: 50px;
   color: var(--grøn);
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
   font-family: "Work Sans", sans-serif;
+  font-size: 1.2rem;
 }
 
 .menu a:hover {
@@ -181,7 +180,7 @@ nav {
     display: block;
     background-color: var(--beige);
     position: absolute;
-    top: 80px;
+    top: 90px;
     right: 0;
     width: 100%;
     height: 200px;
@@ -196,6 +195,7 @@ nav {
   nav.active .menu a {
     font-size: 24px;
     text-align: center;
+    padding: 10px;
   }
 }
 
@@ -229,26 +229,26 @@ nav {
 /************ Forside ********************/
 
 .forside_img {
-  width: 78%;
+  width: 100%;
   margin-bottom: 3rem;
   margin-top: 0;
 }
 
 .forside_h1 {
-  font-size: 14vw;
+  font-size: 4.2rem;
   line-height: 1;
   margin-bottom: 0;
 }
 
 .forside_h2 {
   writing-mode: vertical-lr;
-  font-size: 9vw;
-  line-height: 1.5;
+  font-size: 3rem;
+  line-height: 1.8;
   margin-top: 0;
 }
 
 .forside_h3 {
-  font-size: 5vw;
+  font-size: 1.5rem;
   line-height: 1;
   margin-left: 35%;
 }
