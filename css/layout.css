@@ -152,6 +152,10 @@
     background: var(--beige) url(../billeder/baggrund_ommig.svg) no-repeat center 300px;
   }
 
+  .ommig #backtotop_knap {
+    right: -35%;
+  }
+
   /************** Projekt 1-4 ***************/
 
   .projekter {

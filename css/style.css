@@ -36,6 +36,7 @@ html {
 
 body {
   background-color: var(--beige);
+  scroll-behavior: smooth;
 }
 main {
   padding: 0 1.4rem;
@@ -231,6 +232,18 @@ nav {
   transform: scale(1.1);
 }
 
+#backtotop_knap {
+  position: fixed;
+  right: 3%;
+  top: 88%;
+  width: clamp(55px, 8vw, 70px);
+  display: none;
+}
+
+#backtotop_knap:hover {
+  scale: 1.1;
+}
+
 /************ Forside ********************/
 
 .forside_img {
@@ -287,6 +300,7 @@ nav {
 .projekter_h1 {
   margin-bottom: 2rem;
 }
+
 /**************** Om mig ****************/
 
 li p {
