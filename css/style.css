@@ -285,9 +285,8 @@ nav {
 }
 
 .projekter_h1 {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
-
 /**************** Om mig ****************/
 
 li p {
@@ -296,7 +295,7 @@ li p {
   margin-bottom: 0;
 }
 
-.ommig_img {
+.ommig img {
   max-width: 600px;
   margin: 0 auto;
   margin-bottom: 2rem;
