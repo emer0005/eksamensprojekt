@@ -89,7 +89,7 @@ img {
   margin: 1rem auto;
 }
 
-/************** Menu *************************/
+/************** Menu (fra undervisningen) *************************/
 
 header {
   display: flex;
@@ -217,7 +217,6 @@ nav {
   display: inline-block;
   background-color: var(--grøn);
   color: var(--beige);
-  width: 200px;
   text-align: center;
   font-family: var(--font_tai);
   margin: 1rem auto;
@@ -310,7 +309,7 @@ li p {
 /************ Projekt 1-4 ***************/
 
 .overskrift_h2 {
-  margin-left: 5rem;
+  margin-left: 20%;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   margin-bottom: 3rem;

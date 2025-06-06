@@ -4,14 +4,16 @@
   margin: 0 auto;
 }
 
+/**************** Desktop *****************************/
+
 @media (min-width: 1000px) {
   /**************** Generel style **********************/
   li {
-    font-size: 1.5vw;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
   }
   li p {
-    font-size: 1.5vw;
+    font-size: 1.3rem;
   }
 
   h2 {
@@ -23,14 +25,12 @@
   }
 
   p {
-    font-size: 1.5vw;
+    font-size: 1.3rem;
   }
 
   span {
     font-size: 1vw;
   }
-
-  /************** Overordnet klasser ******************/
 
   body {
     position: relative;
@@ -41,9 +41,17 @@
     margin: 0 auto;
   }
 
+  /************** Overordnet klasser ******************/
+
   .flex_desktop {
     display: flex;
     gap: 150px;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
   }
 
   .grid_1-1-1-1 {
@@ -97,14 +105,16 @@
     font-size: 1.4vw;
     min-width: 30px;
   }
+
+  /* Streg mellem projekter
   .projekt {
     padding: 10px;
     border-right: 2px solid black;
   }
-
   .projekt:nth-child(4n) {
     border-right: none;
   }
+*/
 
   /************* Om mig *************/
   .ommig_img {
@@ -126,5 +136,28 @@
     max-width: 1200px;
     top: 130%;
     left: 35%;
+  }
+
+  /************** Projekt 1-4 ***************/
+
+  .projekter {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .projekter h1 {
+    font-size: 7vw;
+  }
+
+  .projekter img {
+    width: 45%;
+  }
+
+  .overskrift_h2 {
+    font-size: 3vw;
+  }
+
+  .grid_1-1 img {
+    width: 75%;
   }
 }
