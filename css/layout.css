@@ -84,7 +84,7 @@
     white-space: nowrap;
     font-size: 2.6vw;
     left: 87%;
-    top: 100%;
+    top: 105%;
   }
 
   .overskrift {
@@ -93,6 +93,10 @@
 
   .flex {
     max-width: none;
+  }
+
+  body.forside {
+    background: var(--beige) url(../billeder/mønster.svg) no-repeat center top;
   }
 
   /*********** Projekter ************/
@@ -117,14 +121,19 @@
 */
 
   /************* Om mig *************/
-  .ommig_img {
+
+  .ommig {
+    margin-left: 2rem;
+  }
+
+  .ommig img {
     position: absolute;
-    width: 33%;
+    width: 500px;
     left: 55%;
     top: 20%;
   }
 
-  .ommig_h1 {
+  .ommig h1 {
     text-align: left;
     margin-left: 15%;
     margin-bottom: 2rem;
@@ -134,8 +143,13 @@
   .læring {
     position: absolute;
     max-width: 1200px;
-    top: 130%;
-    left: 35%;
+    top: 127%;
+    left: 25%;
+    padding-right: 1rem;
+  }
+
+  body.om_mig {
+    background: var(--beige) url(../billeder/baggrund_ommig.svg) no-repeat center 300px;
   }
 
   /************** Projekt 1-4 ***************/
