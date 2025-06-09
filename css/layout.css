@@ -164,7 +164,7 @@
   .ommig h1 {
     text-align: left;
     margin-left: 15%;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     font-size: 4vw;
   }
 
@@ -180,15 +180,12 @@
     background: var(--beige) url(../billeder/baggrund_ommig.svg) no-repeat center 300px;
   }
 
-  .ommig #backtotop_knap {
-    right: -35%;
-  }
-
   /************** Projekt 1-4 ***************/
 
   .projekter {
     max-width: 1400px;
     margin: 0 auto;
+    margin-bottom: 5rem;
   }
 
   .projekter h1 {
@@ -200,7 +197,7 @@
   }
 
   .overskrift_h2 {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 
   .grid_1-1 img {
