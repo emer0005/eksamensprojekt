@@ -46,6 +46,7 @@ body {
 }
 main {
   padding: 0 1.4rem;
+  margin-bottom: 5rem;
 }
 
 h1 {
@@ -97,6 +98,17 @@ span {
 img {
   width: 80%;
   margin: 1rem auto;
+}
+
+figcaption {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+figure {
+  margin: 3rem 0;
 }
 
 /************** Menu (fra undervisningen) *************************/
@@ -245,7 +257,7 @@ nav {
   position: fixed;
   right: 3%;
   top: 88%;
-  width: clamp(55px, 8vw, 70px);
+  width: 50px;
   display: none;
 }
 
@@ -258,6 +270,10 @@ nav {
 }
 
 /************ Forside ********************/
+
+.forside main {
+  margin: 0;
+}
 
 .forside_img {
   width: 100%;
@@ -292,7 +308,7 @@ nav {
 /*********** Projekter ********************/
 
 .projekt {
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
   text-align: center;
 }
 
@@ -412,7 +428,6 @@ li p {
   color: var(--grøn);
   font-size: 1.1rem;
   margin-top: 0.8rem;
-  margin-bottom: 4rem;
 }
 
 .projekt_knap:hover {

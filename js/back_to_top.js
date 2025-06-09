@@ -2,11 +2,11 @@
 
 const knap = document.querySelector("#backtotop_knap"); // Konstanter
 
-window.addEventListener("scroll", scrollFunction); // Når man scrolle  går den til funktionen scrollFunktion
+window.addEventListener("scroll", scrollFunktion); // Når størrelsen af skærmen ændre sig går den til funktion størrelseFunktion
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    //Tjekker om man er scrollet 20px ned
+function scrollFunktion() {
+  //Tjekker om man er scrollet 20px ned samt størrelsen på sitet
+  if (window.innerWidth <= 500 && (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)) {
     knap.style.display = "block"; // Hvis man har scrollet 20px ned fra toppen, så skal den vises
   } else {
     knap.style.display = "none"; //Hvis man ikke har scrollet 20px ned fra toppen, så skal den ikke vises
