@@ -1,7 +1,15 @@
 .flex {
   display: flex;
-  max-width: 450px;
+  max-width: 400px;
   margin: 0 auto;
+}
+
+.mobil_grid_1-1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 420px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
 }
 
 /**************** Desktop *****************************/
@@ -21,7 +29,7 @@
   }
 
   h1 {
-    font-size: 4vw;
+    font-size: 3.4vw;
   }
 
   p {
@@ -45,13 +53,14 @@
 
   .flex_desktop {
     display: flex;
-    gap: 150px;
+    margin-top: 1rem;
   }
 
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
+    align-items: center;
   }
 
   .grid_1-1-1-1 {
@@ -70,25 +79,26 @@
   }
 
   .forside_h3 {
-    font-size: 3vw;
+    font-size: 3svw;
   }
 
   .forside_img {
-    width: 30%;
+    width: 32%;
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 57%;
   }
   .forside_h2 {
     position: absolute;
     white-space: nowrap;
     font-size: 2.6vw;
-    left: 87%;
-    top: 105%;
+    left: 90%;
+    top: 90%;
+    display: none;
   }
 
   .overskrift {
-    margin-top: 8%;
+    margin-top: 5%;
   }
 
   .flex {
@@ -96,10 +106,38 @@
   }
 
   body.forside {
-    background: var(--beige) url(../billeder/mønster.svg) no-repeat center top;
+    background: var(--beige) url(../billeder/mønster_navn.svg) no-repeat left 150px;
+    background-size: 110%;
+  }
+
+  .forside_knap {
+    display: none;
+    background-color: var(--grøn);
+    color: var(--beige);
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    margin: 1rem auto;
+    text-decoration: none;
+    border-radius: 4%;
+    font-size: 1.2rem;
+    width: 200px;
+    padding: 0.5rem;
+  }
+
+  .forside_knap:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+  }
+  .navn {
+    display: none;
   }
 
   /*********** Projekter ************/
+
+  .projekter_h1 {
+    margin-bottom: 2.5rem;
+    font-size: 4vw;
+  }
 
   .projekt img {
     height: 50%;
@@ -109,16 +147,6 @@
     font-size: 1.4vw;
     min-width: 30px;
   }
-
-  /* Streg mellem projekter
-  .projekt {
-    padding: 10px;
-    border-right: 2px solid black;
-  }
-  .projekt:nth-child(4n) {
-    border-right: none;
-  }
-*/
 
   /************* Om mig *************/
 
@@ -143,7 +171,7 @@
   .læring {
     position: absolute;
     max-width: 1200px;
-    top: 127%;
+    top: 135%;
     left: 25%;
     padding-right: 1rem;
   }
@@ -164,7 +192,7 @@
   }
 
   .projekter h1 {
-    font-size: 7vw;
+    font-size: 5vw;
   }
 
   .projekter img {
