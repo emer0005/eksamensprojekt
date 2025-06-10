@@ -272,7 +272,7 @@ nav {
   margin: 0;
   animation-name: opacity_kf;
   animation-duration: 2s;
-  animation-timing-function: linear;
+  animation-timing-function: ease-out;
 }
 
 .forside_h1 {
@@ -318,6 +318,7 @@ nav {
   font-family: var(--font_work);
   color: var(--grøn);
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .projekt h2 {
@@ -363,6 +364,10 @@ li p {
 
 .løsning_img {
   margin-top: 3rem;
+}
+
+.projekter p {
+  text-align: left;
 }
 
 .overskrift_h2 {
@@ -435,7 +440,7 @@ li p {
   font-weight: 600;
   text-decoration: none;
   color: var(--grøn);
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   margin-top: 0.8rem;
 }
 

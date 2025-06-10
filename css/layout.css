@@ -132,8 +132,8 @@
 
   .ommig img {
     position: absolute;
-    margin-right: 2rem;
-    width: 500px;
+    margin-right: 1rem;
+    width: 32%;
     left: 55%;
     top: 15%;
   }
@@ -151,10 +151,11 @@
     top: 128%;
     left: 25%;
     padding-right: 5rem;
+    padding-bottom: 5rem;
   }
 
   body.om_mig {
-    background: var(--beige) url(../billeder/baggrund_ommig.svg) no-repeat center 300px;
+    background: var(--beige) url(../billeder/baggrund_ommig.svg) no-repeat center 230px;
   }
 
   /************** Projekt 1-4 ***************/
