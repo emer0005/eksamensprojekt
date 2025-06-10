@@ -27,10 +27,11 @@ img {
 
 /**************** Variable ********************/
 html {
+  scroll-behavior: smooth; /* Gør så den scroller smooth når man trykker på back to top knap */
   --grøn: #014421;
   --beige: rgb(223 220 213);
   --font_tai: "Tai Heritage Pro", serif;
-  scroll-behavior: smooth;
+  --font_work: "Work Sans", sans-serif;
 }
 
 /**************** Overordnet style ************/
@@ -45,26 +46,25 @@ main {
 
 h1 {
   color: var(--grøn);
-  font-family: "Tai Heritage Pro", serif;
+  font-family: var(--font_tai);
   font-size: 3rem;
   line-height: 1;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
   color: var(--grøn);
-  font-family: "Tai Heritage Pro", serif;
+  font-family: var(--font_tai);
   line-height: 1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
   color: var(--grøn);
-  font-family: "Tai Heritage Pro", serif;
 }
 
 p {
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--font_work);
   line-height: 2;
   font-size: 1.1rem;
   margin-bottom: 2rem;
@@ -73,14 +73,14 @@ p {
 }
 
 li {
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--font_work);
   font-size: 1.1rem;
   list-style: none;
   margin-bottom: 1rem;
 }
 
 ul {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 span {
@@ -96,9 +96,10 @@ img {
 
 figcaption {
   text-align: center;
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--font_work);
   font-style: italic;
   font-size: 0.8rem;
+  margin-top: -1rem;
 }
 
 figure {
@@ -148,7 +149,7 @@ nav {
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--font_work);
   font-size: 1.3rem;
 }
 
@@ -234,7 +235,7 @@ nav {
   background-color: var(--grøn);
   color: var(--beige);
   text-align: center;
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--font_work);
   margin: 1rem auto;
   text-decoration: none;
   border-radius: 4%;
@@ -259,10 +260,6 @@ nav {
   scale: 1.1;
 }
 
-.forside_knap {
-  display: none;
-}
-
 /************ Forside ********************/
 
 .forside main {
@@ -273,30 +270,32 @@ nav {
   width: 100%;
   margin-bottom: 3rem;
   margin: 0;
+  animation-name: opacity_kf;
+  animation-duration: 2s;
+  animation-timing-function: linear;
 }
 
 .forside_h1 {
   font-size: 4.2rem;
   line-height: 1;
   margin-bottom: 0;
-}
-
-.forside_h2 {
-  writing-mode: vertical-lr;
-  font-size: 2.6rem;
-  line-height: 1.8;
-  margin-top: 0;
+  animation-name: slide_left_kf;
+  animation-duration: 2s;
 }
 
 .forside_h3 {
   font-size: 1.5rem;
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--font_work);
   margin-left: 35%;
   font-weight: 400;
+  animation-name: slide_right_kf;
+  animation-duration: 2s;
 }
 
 .navn {
   width: 80%;
+  animation-name: slide_top_kf;
+  animation-duration: 2s;
 }
 
 /*********** Projekter ********************/
@@ -310,12 +309,13 @@ nav {
   width: 55%;
   max-width: 350px;
   margin: 2rem auto;
+  margin-top: 3rem;
 }
 
 .projekt p {
   margin-bottom: 0.5rem;
   margin-top: 0;
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--font_work);
   color: var(--grøn);
   font-size: 1.5rem;
 }
@@ -342,11 +342,16 @@ li p {
 .ommig img {
   max-width: 600px;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 .uddannelse {
-  margin-top: 0.55rem;
+  margin-top: 1rem;
+}
+
+.læring h2 {
+  margin-bottom: 1rem;
 }
 
 /************ Projekt 1-4 ***************/
@@ -356,12 +361,22 @@ li p {
   margin-bottom: 2rem;
 }
 
+.løsning_img {
+  margin-top: 3rem;
+}
+
 .overskrift_h2 {
   margin-left: 20%;
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--font_work);
   font-weight: 400;
   margin-bottom: 3rem;
+  margin-top: 0;
   font-size: 1.3rem;
+}
+
+.margin {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
 }
 
 .navigation ul {
@@ -403,7 +418,7 @@ li p {
   color: var(--grøn);
   text-decoration: none;
   font-size: clamp(0.8rem, 2vw, 1rem);
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--font_work);
   font-weight: 500;
   text-align: center;
 }
@@ -416,7 +431,7 @@ li p {
   display: inline-block;
   border: 2px solid var(--grøn);
   padding: 0.5rem 1rem;
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--font_work);
   font-weight: 600;
   text-decoration: none;
   color: var(--grøn);
@@ -426,4 +441,52 @@ li p {
 
 .projekt_knap:hover {
   text-decoration: underline;
+  scale: 1.1;
+}
+
+/************* animationer ****************/
+
+@keyframes opacity_kf {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes slide_left_kf {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide_right_kf {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide_top_kf {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

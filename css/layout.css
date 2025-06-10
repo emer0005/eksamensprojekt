@@ -1,9 +1,3 @@
-.flex {
-  display: flex;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
 .mobil_grid_1-1 {
   display: grid;
   grid-template-columns: auto auto;
@@ -79,7 +73,7 @@
   }
 
   .forside_h3 {
-    font-size: 3svw;
+    font-size: 2.8vw;
   }
 
   .forside_img {
@@ -87,22 +81,22 @@
     position: absolute;
     top: 35%;
     left: 57%;
+    animation-name: slide_right__desktop_kf;
+    animation-duration: 1.8s;
+    animation-timing-function: linear;
   }
-  .forside_h2 {
-    position: absolute;
-    white-space: nowrap;
-    font-size: 2.6vw;
-    left: 90%;
-    top: 90%;
-    display: none;
+
+  @keyframes slide_right__desktop_kf {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 
   .overskrift {
     margin-top: 5%;
-  }
-
-  .flex {
-    max-width: none;
   }
 
   body.forside {
@@ -110,24 +104,6 @@
     background-size: 110%;
   }
 
-  .forside_knap {
-    display: none;
-    background-color: var(--grøn);
-    color: var(--beige);
-    text-align: center;
-    font-family: "Work Sans", sans-serif;
-    margin: 1rem auto;
-    text-decoration: none;
-    border-radius: 4%;
-    font-size: 1.2rem;
-    width: 200px;
-    padding: 0.5rem;
-  }
-
-  .forside_knap:hover {
-    transform: scale(1.1);
-    text-decoration: underline;
-  }
   .navn {
     display: none;
   }
@@ -140,7 +116,7 @@
   }
 
   .projekt img {
-    height: 50%;
+    height: 40%;
   }
 
   .projekt p {
@@ -156,9 +132,10 @@
 
   .ommig img {
     position: absolute;
+    margin-right: 2rem;
     width: 500px;
     left: 55%;
-    top: 20%;
+    top: 15%;
   }
 
   .ommig h1 {
@@ -171,9 +148,9 @@
   .læring {
     position: absolute;
     max-width: 1200px;
-    top: 135%;
+    top: 128%;
     left: 25%;
-    padding-right: 1rem;
+    padding-right: 5rem;
   }
 
   body.om_mig {
@@ -193,7 +170,8 @@
   }
 
   .projekter img {
-    width: 45%;
+    width: 70%;
+    max-width: 800px;
   }
 
   .overskrift_h2 {
@@ -202,5 +180,9 @@
 
   .grid_1-1 img {
     width: 75%;
+  }
+
+  .løsning_img img {
+    width: 80%;
   }
 }
